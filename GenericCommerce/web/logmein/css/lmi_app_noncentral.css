@@ -1,0 +1,323 @@
+﻿ul.buttons { display: block; list-style: none; padding: 0px; margin: 0px; height: 24px; }
+ul.buttons li {float: left; height: 24px; margin: auto; width: auto;}
+
+div.panelAdd li.buttonLeftmost,
+div.panelAdd li.buttonLeftmid,
+div.panelAdd li.buttonRightmid,
+div.panelAdd li.buttonRightmost
+{width: 4px;}
+
+div.panelAdd li.buttonLeftmost
+{background: url('../images/blue_left_10x24.png') no-repeat top left;}
+div.panelAdd li.buttonLeft
+{background: url('../images/blue_100x24.png') repeat-x;}
+
+input.buttonAdd, button.buttonAdd, 
+input.RestoreDefaultCharts, button.RestoreDefaultCharts
+{
+	border: none;
+background: none;
+color: #ffffff;
+}
+
+input.buttonAddLeftFloat, button.buttonAddLeftFloat
+{
+background: none;
+color: #ffffff;
+float: left;
+width: 160px;
+}
+
+input.buttonCancel, button.buttonCancel
+{
+background: none;
+color: #ffffff;
+}
+
+div.panelAdd li.buttonLeftmid
+{
+margin-right: 5px;
+background: url('../images/blue_right_10x24.png') no-repeat top right;
+}
+
+/*cancel button*/
+div.panelAdd li.buttonRightmid
+{background: url('../images/gray_left_10x24.png') no-repeat top left;}
+div.panelAdd li.buttonRight
+{background: url('../images/gray_100x24.png') repeat-x;}
+div.panelAdd li.buttonRightmost
+{background: url('../images/gray_right_10x24.png') no-repeat top right;}
+
+div.panelAdd input, div.panelAdd button
+{
+padding: 0;
+border: none;
+font: bold 12px Arial;
+cursor: pointer;
+overflow: visible;
+width: auto;
+height: 24px;
+line-height: 24px;
+}
+div.panelAdd input, div.panelAdd button , x:-moz-any-link { height: 20px; line-height: 20px; }
+
+div.panelAdd li.buttonLeftmid {margin-right: 5px}
+div.panelAdd {border-bottom: 1px solid white}
+div.loginbox.small {background-color: Transparent;}
+
+table.disabled div.panelAdd li.buttonLeftmost, div.panelAdd.disabled li.buttonLeftmost
+{background: url('../images/grayd_left_10x24.png') no-repeat top left;}
+table.disabled div.panelAdd li.buttonLeft, div.panelAdd.disabled li.buttonLeft
+{background: url('../images/grayd_100x24.png') repeat-x;}
+table.disabled div.panelAdd li.buttonLeftmid, div.panelAdd.disabled li.buttonLeftmid
+{background: url('../images/grayd_right_10x24.png') no-repeat top right;}
+
+table.disabled div.panelAdd li.buttonRightmid, div.panelAdd.disabled li.buttonRightmid
+{background: url('../images/grayd_left_10x24.png') no-repeat top left;}
+table.disabled div.panelAdd li.buttonRight, div.panelAdd.disabled li.buttonRight
+{background: url('../images/grayd_100x24.png') repeat-x;}
+table.disabled div.panelAdd li.buttonRightmost, div.panelAdd.disabled li.buttonRightmost
+{background: url('../images/grayd_right_10x24.png') no-repeat top right;}
+
+/*central tier navigation overrides*/
+
+div.addatd 
+{
+	text-align: right;
+	position: relative; 
+	margin-top: -24px;
+}
+div.addatd.bottom 
+{
+	padding-top: 6px;
+	margin-top: 0px;
+}
+
+span.addcmpImg
+{
+	display:inline-block;
+    display:-moz-inline-stack;
+    zoom:1;
+    display:inline;	
+	height: 20px;
+	padding-left: 20px;
+	background: url('../images/cnt_home_ico_config_addmachine.gif') no-repeat 0px 1px;
+}
+
+span.addgrpImg 
+{
+	display:inline-block;
+    display:-moz-inline-stack;
+    zoom:1;
+    display:inline;	
+	height: 20px;
+	padding-left: 20px;
+	background: url('../images/cnt_home_ico_addgroup.gif') no-repeat 0px 1px;
+}
+span.addcmpImg a, span.addgrpImg a
+{position: relative; top: 5px;}
+
+div.addatd ul.buttons.tier, div.addatd.bottom  ul.buttons.tier
+{
+	display:inline-block;
+    display:-moz-inline-stack;
+    zoom:1;
+    display:inline;
+    
+    position: relative;
+    top: -3px;
+}
+
+div.addatd span.btnpaddings
+{
+	display:inline-block;
+    display:-moz-inline-stack;
+    zoom:1;
+    display:inline;
+	
+    width: 18px;
+}
+
+/*kill buttons*/
+ul.buttons.tier  li.buttonLeftmost
+{background: none;}
+ul.buttons.tier  li.buttonLeft
+{background: none;}
+
+ul.buttons.tier li.buttonLeftmost,
+ul.buttons.tier li.buttonLeftmid,
+ul.buttons.tier li.buttonRightmid,
+ul.buttons.tier li.buttonRightmost
+{display: none;}
+
+ul.buttons.tier a
+{
+	padding: 0;
+	color: #0088CE;
+}
+ul.buttons.tier a:hover
+{
+	color: #0088EE !important;
+}
+/*clear tier layout*/
+html
+{
+	height: auto;	
+}
+/*mycomp leftnav*/
+table.mycomptopnav 
+{
+	text-align: right;
+	font: 8pt Arial;
+	color:#5E5E5E !important;
+	margin-bottom: -25px;
+}
+ul.mycompnav
+{
+	position: relative;
+	z-index: 12;	
+	margin: 0; padding: 0;
+	width: 170px;
+    line-height: normal;
+}
+ul.mycompnav span.mycomp 
+{
+    margin: 0; padding: 0;
+    display: block; margin-top: 1px; height: 24px
+}
+ul.mycompnav li 
+{
+	margin: 0;
+	padding: 0;
+    float: left; clear: both; width: 100%
+}
+ul.mycompnav li a
+{
+	display: block;
+	text-transform: uppercase;
+	font: bold 8pt Arial;
+}
+ul.mycompnav li span.button span.left, ul.mycompnav li span.button span.right
+{
+    width: 4px;
+}
+ul.mycompnav li span.button span.middle a
+{
+	padding-left: 3px;
+}
+ul.mycompnav li span.button span.middle
+{
+	width: 162px;
+}
+ul.mycompnav li span.button.active a
+{
+	color: #444444;
+}
+ul.mycompnav li span.sub
+{
+	padding: 0;
+	margin: 0;
+    display: block;
+    border-bottom: 1px dotted #E5E5E5;
+    float: left; clear: both; width: 100%
+}
+ul.mycompnav li span.sub a
+{
+	text-transform: none;
+	color: #0088ce;
+    padding: 5px 0px 5px 12px;
+}
+ul.mycompnav li span.sub.active a
+{
+	color: #444444;
+}
+ul.mycompnav li span.sub.last
+{
+	border-bottom: 5px solid white;
+}
+
+table.mycomptopnav
+{
+	position: relative;
+	top: 11px;
+	z-index: 11;
+	white-space: nowrap;
+	margin-left: 673px;
+	margin-left: 643px;
+}
+
+table.g3fullwidth h1.sIFR-replaced object
+{
+	position: relative;
+	z-index: 10;
+}
+
+
+div.subtabnav
+{
+	width: auto;
+	border-bottom: 2px solid #E3EEF2;
+}
+div.subtabnav ul
+{
+	margin: 0;
+	padding: 0;
+	margin-bottom: -1px;	
+	zoom:1;
+	margin: 0;
+}
+div.subtabnav ul, x:-moz-any-link, x:default
+{
+	margin-bottom: 0px;
+}
+div.subtabnav ul li
+{
+	display: inline;	
+	background-color:#E3EEF2;
+	white-space:nowrap;
+	margin-right: -1px;
+	padding: 3px 2px 3px 2px;
+	padding: 0px;
+	margin-right: 2px;
+	zoom: 1;
+}
+div.subtabnav ul li span a
+{
+	padding: 2px 6px 3px 6px;
+	padding: 2px 7px 3px 7px;
+	font-size: 8pt;
+}
+div.subtabnav ul li span a, x:-moz-any-link, x:default
+{
+	padding: 2px 6px 4px 6px;
+	padding: 2px 6px 3px 6px;
+}
+div.subtabnav ul li.active span
+{
+	background-color:#fff;
+	border-top: 2px solid #E3EEF2;
+	border-left: 1px solid #E3EEF2;
+	border-right: 1px solid #E3EEF2;
+	padding: 1px 0px 4px 0px;
+	margin: 0 -2px;
+	
+	position: relative;
+	margin: -2px 0px -5px 0px;
+	padding: 0px 0px 1px 0px;
+}
+div.subtabnav ul li.active span, x:-moz-any-link, x:default
+{
+	padding: 1px 0px 5px 0px;
+	padding: 0px 0px 1px 0px;
+}
+div.subtabnav ul li.active span a
+{
+	border-left: 1px solid #E3EEF2;
+	border-right: 1px solid #E3EEF2;
+	color: #000 !important;
+}
+div.subtabifrm iframe
+{
+	border: none;
+	overflow: hidden;
+}

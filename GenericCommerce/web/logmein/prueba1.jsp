@@ -362,25 +362,24 @@
                                             <li>
                                                 <span class="button mycomp active">
                                                     <span class="left"></span>
-                                                    <span class="middle"><a href="/computers.asp">Access</a></span>
-
+                                                    <span class="middle"><a href="/computers.asp">Adm de clientes</a></span>
                                                     <span class="right"></span><div class=clears></div>
                                                 </span>
-                                                <span class="sub active"><a href="/computers.asp">My Computers</a></span><span class="sub"><a href="/userlist.asp">Users</a></span><span class="sub"><a href="/reports_wrapper.asp">Reports</a></span><span class="sub last"><a href="/products/pro2/purchase.aspx">Buy</a></span>
+                                                <span class="sub active"><a href="/computers.asp">Nuevo cliente</a></span>
+                                                <span class="sub"><a href="/userlist.asp">Modificar cliente</a></span>
+                                                <span class="sub"><a href="/reports_wrapper.asp">Borrar cliente</a></span>
                                             </li>
                                             <li>
                                                 <span class="button mycomp">
                                                     <span class="left"></span>
-                                                    <span class="middle"><a href="/computers.asp?p=b">Backup</a></span>
-
+                                                    <span class="middle"><a href="/computers.asp?p=b">Buscar</a></span>
                                                     <span class="right"></span><div class=clears></div>
                                                 </span>
-
                                             </li>
                                             <li>
                                                 <span class="button mycomp">
                                                     <span class="left"></span>
-                                                    <span class="middle"><a href="/hamachi/computers.asp">Network</a></span>
+                                                    <span class="middle"><a href="/hamachi/computers.asp">Otro</a></span>
                                                     <span class="right"></span><div class=clears></div>
                                                 </span>
 
@@ -485,7 +484,7 @@
                                                     <div id="cmp_tbar_right"></div>
                                                 </div>
                                             </div>
-                                            <ul class="buttons tier"><li class="buttonLeftmost"></li><li class="buttonLeft"><span class="addtexts addcmpImg" id="addcomplink"><a style="padding-right: 5px;" href="deployselectaccess.asp">Add Computer</a></span></li><li class="buttonLeftmid"></li></ul>
+                                            <%--<ul class="buttons tier"><li class="buttonLeftmost"></li><li class="buttonLeft"><span class="addtexts addcmpImg" id="addcomplink"><a style="padding-right: 5px;" href="deployselectaccess.asp">Add Computer</a></span></li><li class="buttonLeftmid"></li></ul>--%>
                                         </div>
 
 
@@ -636,7 +635,7 @@
                                     parent.document.DisableOfflineHostFavorites(onlineHostIdList);
                                         </script>
 
-                                        <div class="addatd bottom"><ul class="buttons tier"><li class="buttonLeftmost"></li><li class="buttonLeft"><span class="addtexts addcmpImg" id="addcomplink"><a style="padding-right: 5px;" href="deployselectaccess.asp">Add Computer</a></span></li><li class="buttonLeftmid"></li></ul></div>
+                                        <%--<div class="addatd bottom"><ul class="buttons tier"><li class="buttonLeftmost"></li><li class="buttonLeft"><span class="addtexts addcmpImg" id="addcomplink"><a style="padding-right: 5px;" href="deployselectaccess.asp">Add Computer</a></span></li><li class="buttonLeftmid"></li></ul></div>--%>
 
                                         <!--"Did you know?" content starts-->
 

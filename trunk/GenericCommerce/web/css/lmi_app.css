@@ -1,0 +1,139 @@
+body, table, a { line-height: normal; }
+
+
+h1 {font-size: 28px; color: black; font-family: "arial narrow", arial, tahoma, sans-serif; font-weight: normal; margin-top: 0px; margin-left: 0px; padding-top: 0px !important}
+h2 {font-size: 20px; color: black; font-family: "arial narrow", arial, tahoma, sans-serif; font-weight: normal; margin-left: 0px; padding: 0px !important}
+h3 {font-size: 16px; color: black; font-family: "arial narrow", arial, tahoma, sans-serif; font-weight: normal}
+.h2_userinput {font-weight: bold; font-size: 14px; color: black}
+.pagecontent table {color: black; line-height: normal; border-collapse: separate}
+.pagecontent a {color: #0088CE; line-height: normal !important}
+.pagecontent a:hover {color: #12AFFF !important}
+a.remctrl_link:hover {color: #ffffff !important; text-decoration: underline;}
+.pagecontent a:active {outline: none}
+.profileswitch {font-size: 8pt; border: 1px solid #7F9DB9; padding: 1px; width: 180px}
+#helptext {margin-top: 5px; margin-bottom: 15px; margin-left: 180px; border: 1px solid #C0C0C0; padding: 5px; text-align: left}
+.silkfullwidth {width: 100%; height: 100%; vertical-align: top}
+.myctopnav {width: 958px; position: relative; left: -25px; margin-bottom: 15px; border-top: 1px solid #90C0E0; 
+            background: white url(../images/topgradg3.jpg) top right repeat-y}
+.myctopnavleft {width: 50%; padding-left: 25px}
+.myctopnavright {width: 50%; padding-right: 15px}
+.g3fullwidth {width: 100%; height: 100%; vertical-align: top}
+.leftnavlink {font-size: 8pt; padding-top: 3px; padding-bottom: 3px; padding-left: 8px; padding-right: 8px; text-align: right}
+.leftnavhighed {background-color: #0C87C6; color: white; font-weight: bold}
+.leftnavdivider {font-size: 1px; border-top: 3px solid white; border-bottom: 2px solid white; 
+                padding: 0px; padding-left: 10px; padding-right: 10px; text-align: right; background-color: #DDE7F3}
+.siderow {padding-top: 2px; padding-bottom: 2px; padding-left: 5px; vertical-align: top; width: 99%} 
+.bullet1 {font-size: 8px; padding-top: 4px; width: 1%; vertical-align: top}
+textarea {font-family: arial; font-size: 12px}
+.managelink {text-decoration: none; font-size: 11px}
+.h1noncentral {margin: 0px; padding: 0px}
+form, blockquote {color: black}
+
+div.pagecontent div.middlecol.one {
+    width: 918px !important;
+    padding: 0px 20px 0px 20px !important;
+    float: left;
+}
+
+.myctable {width: 100%; margin-bottom: 15px; font-size: 12px}
+
+.shhi {white-space: nowrap; padding: 1px 10px 0px 5px; background-color: #EDEDED; border-bottom: 1px solid #D9D9D9; font-weight: bold; color: #606060}
+.shhi label {position: relative; top: -2px; font-size: 8pt}
+
+.hcell {padding: 4px 4px 3px 4px; cursor: default; color: #606060; background-color: #EDEDED; font-weight: bold; border-bottom: 1px solid #D9D9D9; font-size: 11px}
+.ncell {padding: 1px 4px}
+
+.hc0 {padding-left: 12px; background-color: white; border-bottom: 1px solid white}
+.hc1 {text-align: center; width: 1%; border-right: 1px solid white} 
+.hc2 {text-align: center; width: 1%; border-right: 1px solid white} 
+.hc3 {width: 98%; border-right: 1px solid white} 
+.hc31 {width: 98%; border-right: 1px solid white} 
+.hc32 {width: 90px; min-width: 90px; white-space: nowrap; border-right: 1px solid white} 
+.hc33 {width: 130px; min-width: 130px; white-space: nowrap; border-right: 1px solid white} 
+.hc4 {width: 100px; min-width: 100px; border-right: 1px solid white; white-space: nowrap} 
+.hc5 {text-align: center; width: 1%; border-right: 1px solid white} 
+.hc6 {text-align: center; width: 1%} 
+
+.nc0 {cursor: default; background-color: white}
+.nc1 {text-align: center; width: 1%; height: 19px; cursor: default} 
+.nc2 {text-align: center; width: 1%; border-right: none} 
+.nc3 {width: 98%; cursor: default} 
+.nc31 {width: 98%; cursor: default} 
+.nc32 {width: 90px; min-width: 90px; cursor: default; white-space: nowrap; padding-right: 10px} 
+.nc33 {width: 130px; cursor: default; white-space: nowrap; padding-right: 10px} 
+.nc4 {width: 100px; cursor: default; white-space: nowrap} 
+.nc5 {text-align: center; white-space: nowrap} 
+.nc6 {text-align: center; height: 19px; font-size: 11px; white-space: nowrap}
+.tagscell {width: 115px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap}
+
+.tileft {background: transparent url('../images/tiledrowleft.gif') no-repeat top right; font-size: 2px; width: 3px}
+.timid {background: transparent url('../images/tiledrowmid.gif') repeat-x top right; height: 28px}
+.tiright {background: transparent url('../images/tiledrowright.gif') no-repeat top right; font-size: 2px; width: 3px}
+
+.legendinner {color: black; font-size: 12px}
+.legendinnerleft {}
+.legendinnerright {}
+
+#searchresults {margin-top: 4px; margin-bottom: 12px; font-size: 12px}
+
+.offmsg, .offmsg a {color: #404040}
+.offmsg a:hover {color: #4060E0}
+.BigYellowMsg {background-color: #FFFFE1; border: 1px solid #F4F4F4; color: black;} 
+.BigYellowMsg p {margin-top: 12px; margin-bottom: 12px} 
+.BigYellowMsg ul {margin-top: 12px; margin-bottom: 15px} 
+.MyCMsg {margin-bottom: 20px; border: 1px solid #D8D8D4; background-color: #FFFFF0; width: 100%} 
+
+.datatable3 .heading TD {background: none; border-bottom: 1px solid #A0C0E0; font-size: 12px; font-weight: bold}
+#savingmarq {position: relative; left: 30px; top: 5px; font-weight: bold}
+
+.subnavcontainer {width: 100%; margin-bottom: 5px; background-color: #F4F4F4}
+.subnav, .subnavtd {font-weight: bold; font-size: 8pt; white-space: nowrap}
+.subnavselect {font-size: 8pt; white-space: nowrap}
+.subnavtd {padding: 3px}
+
+.buttonAdd, .buttonv2 {color: black; font: bold 13px arial, helvetica, sans-serif}
+.buttonCancel {color: black; font: normal 13px arial, helvetica, sans-serif}
+
+a.imgbutton2 {
+    background: transparent url('../images/but-leftw.jpg') no-repeat;
+    height: 40px;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    font: bold 16px arial, sans-serif;
+    text-decoration: none;
+}
+a.imgbutton2:hover {
+    text-decoration: underline;
+}
+a.imgbutton2 span {
+    background: transparent url('../images/but-right.jpg') no-repeat top right;
+    display: block;
+    line-height: 18px;
+    padding-top: 10px; padding-left: 30px; padding-right: 14px; padding-bottom: 11px;
+    white-space: nowrap;
+}
+
+.sectiondivider {border-bottom: 1px solid #90C0E0}
+.sectionlabel {font-size: 12px; background-color: white; padding: 0px 5px 0px 0px; position: relative; top: -8px; white-space: nowrap; display: inline}
+.grayhr {border-top: 1px solid #DDE7F3; font-size: 3px}
+
+.yellowmsg {text-align: center}
+.yellowmsg table {text-align: center; background-color: #FFF1A8; border: 1px solid #FFFAE1; color: black; margin-left: auto; margin-right: auto}
+.yellowmsg table td {text-align: center; white-space: nowrap; padding: 3px 40px 3px 40px; font-weight: bold}
+
+.nudge {margin: 20px 0px; border: 1px solid #EAE4BF; background-color: #FFFCCC; font-size: 8pt; font-weight: bold}
+
+td#profiletext
+{
+    text-align: right; 
+    width:50px;
+    width:80px;
+}
+
+
+
+
+
+
+

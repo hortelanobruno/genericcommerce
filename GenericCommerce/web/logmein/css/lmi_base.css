@@ -353,7 +353,9 @@ div.headmenu #menu2 li a, x:-moz-any-link {
 div.headmenu #menu2 li:hover a, div.headmenu #menu2 li a:hover {
     background: #1a7ab0;
     color:#FFFFFF !important;
+    display: block;
 }
+
 /*ie6 menufix*/
 div.headmenu #menu li:hover dl iframe.hidefrm {
     display: block;

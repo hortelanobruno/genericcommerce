@@ -1,80 +1,58 @@
-<%-- 
-    Document   : index
-    Created on : 17/03/2010, 22:54:59
-    Author     : brunoli
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
-
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-        <link type="text/css" href="../css/ui-lightness/jquery-ui-1.8rc3.custom.css" rel="stylesheet" />
-        <link type="text/css" href="../css/jdMenu.css" rel="stylesheet" />
-        <script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
-        <script type="text/javascript" src="../js/jquery-ui-1.8rc3.custom.min.js"></script>
-        <script type="text/javascript" src="../js/jquery.jdMenu.js"></script>
-        <style type="text/css">
-            #toolbar {
-                padding: 10px 4px;
-            }
-        </style>
-        <script type="text/javascript">
-            $(function() {
-                $('ul.jd_menu').jdMenu();
-                $("#nuevo_cliente").button();
-                $("#modificar_cliente").button();
-                $("#borrar_cliente").button();
-            });
-        </script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../css/lmi_base.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="../scripts/commonscript.js"></script>
+        <script type="text/javascript" language="javascript" src="../scripts/webtrends.js"></script>
+        <link href="../css/lmi_page.css" rel="stylesheet" type="text/css" />
+        <title>LogMeIn - Remote Access and Desktop Control Software</title>
+        <meta name="keywords" content="remote control, remote access, desktop, free software, free download, pc anywhere, vnc, go to my pc, gotomypc, logmein, it reach, rescue, logmein pro, ultra vnc, pc access, computer, symantec, viewer, sharing, ftp, desktop sharing, file sharing, viewing, remote, mouse, keyboard, downloads, remotely anywhere, network console, scout, remotePC, secure, security, PocketPC, PDA, Palm, wireless, internet, VPN." /><meta name="description" content="LogMeIn is FREE, secure remote desktop access to your PC from anywhere. Remotely control the mouse, keyboard and desktop from any computer or PocketPC connected to the internet." />
+        <link rel="stylesheet" type="text/css" href="../scripts/Includer.ashx.css?c=notif,comps,ctxmenu,loading" />
+        <script type="text/javascript" src="../scripts/Includer.ashx?s=compnew,comptitle,complist,compdet,compwol,tzdetails,ddclient,notif,hostnotes,ajax,ctrlsbmt,common,msajax,msajaxforms,wolserws,compws,didyouknowws,didyouknowml,compml,ctxmenu,spcctxmenu"></script>
     </head>
-    <body>
-        <div id ="menu_bar">
-            <ul class="jd_menu jd_menu_jdsharp">
-                <li><a href="/">Home</a></li>
-                <li><a href="#" class="accessible">My jQuery Plugins</a>
-                    <ul>
-                        <li><a href="/jQuery/plugins/AutoScroll/">AutoScroll</a></li>
-                        <li><a href="/jQuery/plugins/jdMenu/">jdMenu</a></li>
-                        <li><a href="/jQuery/plugins/jdNewsScroll/">jdNewsScroll</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="accessible">jQuery Minute&trade;</a>
-                    <ul>
-                        <li><a href="http://jqueryminute.com/blog/">jQuery Minute Blog</a></li>
-                        <li><a href="/jQuery/minute/calculate-scrollbar-width.php">Calculate Scrollbar Width</a></li>
-                    </ul>
-                </li>
-                <li><a href="/contact.php">Contact</a></li>
-            </ul>
+    <body  lang="en-US">
+        <div id="main" class="main">
+            <input type="hidden" id="hfErroCode" value="" />        <div class="contentcontainer" id="page_content_container">
+                <div class="header">
+                    <%@include file="../cmp/toper.jsp" %>
+                    <%@include file="../cmp/menu.jsp" %>
+                </div>
+
+                <div class="content">
+                    <div class="pagecontent">
+                        <%@include file="../cmp/navbar.jsp" %>
+                        <div class="middlecol one">
+                            <div style="position: absolute; z-index: 20; display: none; width: 300px; height: 10px; padding: 5px;" id="offlinemsg">
+                                &nbsp;
+                            </div>
+                            <link href="../css/lmi_app.css" rel="stylesheet" type="text/css" />
+                            <link href="../css/lmi_app_noncentral.css" rel="stylesheet" type="text/css" />
+                            <table cellpadding="0" cellspacing="0" border="0" class=g3fullwidth>
+                                <tr>
+                                    <td valign=top style="width: 170px; padding-right: 15px">
+                                        <%@include file="sidebar.jsp" %>
+                                    </td>
+                                    <td style="width: 100%; vertical-align: top; padding: 0px">
+                                        <h1 class="h1noncentral">Titulo</h1>
+                                        <img src="images/blank.gif" alt="" width="1" height="1" id="setgroup" style="display: none" />
+                                        <!-- Start of Context menu -->
+                                        <div id="tier_content">
+                                            <!--content area starts-->
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="clears"></div>
+                    </div>
+                </div>
+                <div class="contentbottom">
+                    <div class="s_nr left"></div>
+                    <div class="s_nr right"></div>
+                    <div class="clears"></div>
+                </div>
+            </div>
+            <%@include file="../cmp/footer.jsp" %>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="demo-frame">
-            <div class="demo">
-                <span id="toolbar" class="ui-widget-header ui-corner-all">
-                    <button id="nuevo_cliente">Nuevo</button>
-                    <button id="modificar_cliente">Modificar</button>
-                    <button id="borrar_cliente">Borrar</button>
-                </span>
-
-            </div><!-- End demo -->
-        </div>
-
-
-        <div class="demo-description">
-
-            <p>
-	A mediaplayer toolbar. Take a look at the underlying markup: A few button elements,
-	an input of type checkbox for the Shuffle button, and three inputs of type radio for the Repeat options.
-            </p>
-
-        </div><!-- End demo-description -->
-    </body>
-</html>
+    </body></html>

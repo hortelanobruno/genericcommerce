@@ -1,0 +1,1453 @@
+#divAlertID 
+{
+    display: block; 
+    position: absolute; 
+    z-index: 200; 
+    width: 520px; 
+    left: 440px; 
+    top: 220px;
+}
+
+#dimmerDiv
+{
+    display: none;
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    min-height:100%;
+    background-color: black;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+    -KHTML-opacity: 0.6;
+}
+
+A.noTitle:link , A.yesTitle:link
+{
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+A.noTitle:hover , A.yesTitle:hover
+{
+    color: #7897E4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table.noTitle 
+{
+    width: 520px;
+    border-width: 0px;
+    border-spacing: 0px;
+    background: #345C7F url(../images/bg-notif.gif) repeat-x top left;
+}
+
+table.yesTitle 
+{
+    width: 520px;
+    border-width: 0px;
+    border-spacing: 0px;
+    background-color: #333e70;
+}
+
+td.alertText
+{
+    text-align: left;
+    font-size: 11px;
+    color: #ffffff !important;
+    padding: 5px 32px 5px 32px;
+}
+
+td.alertButton
+{
+    text-align: center;
+}
+
+td.alertTitle
+{
+    font-size: 16px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    color: black;
+    padding: 0px 5px 10px 0px;
+}
+
+td.x
+{
+    padding-top: 5px 5px 0px 0px;
+    text-align: right;
+}
+
+td.alertSpace
+{
+    height: 30px;
+}
+
+.alertText h2 {color: white}
+body
+{
+    font-size: 11px;
+    font-family: Arial;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+fieldset
+{
+    padding: 0px;
+}
+/*
+-- removed because the row highlight doesn't work in this case we've to figure out why
+table tr td
+{
+background: #FFFFFF;
+}
+*/
+ul#Computers_HostList
+{
+    margin-top: 15px;
+}
+
+span.Computers_HostName
+{
+    clear: right;
+
+    font-weight: bold;
+    font-family: arial;
+    font-size: 12pt;
+}
+
+div.Computers_HostImage
+{
+    float: left;
+    margin: 0px 5px 0px 0px;
+    vertical-align: top;
+    width: 88px;
+    height: 50px;
+}
+
+div.Computers_HostImage.on { 
+    background: url('../images/sprites_elements2.png') no-repeat 0 -790px;;;
+    -behavior: url('../css/iepngfix.htc');
+}
+div.Computers_HostImage.off { 
+    background: url('../images/sprites_elements2.png') no-repeat -100px -790px;;;
+    -behavior: url('../css/iepngfix.htc');
+}
+
+ul.Computers_HostDetails
+{
+    float: left;
+    height: 55px;
+    width: 200px;
+    margin-right: 5px;
+}
+
+ul#Computers_HostList
+ul.Computers_HostDetails li
+{
+    margin: 2px 0px 0px 0px;
+}
+
+fieldset.Computers_HostControls
+{
+    padding: 0px 8px 5px 8px;
+    margin-bottom: 10px;
+    border: solid 1px #808080;
+}
+
+a.nodecoration
+{
+    text-decoration: none;
+    color: #404040;
+}
+
+a.nodecoration:hover
+{
+    color: #404040;
+}
+
+/* moved from computers_new.asp */
+.legenda 
+{
+    text-decoration: none;
+    outline: none
+}
+
+.selecthigh 
+{
+    font-family: tahoma;
+    font-size: 8pt
+}
+
+.optionhigh 
+{
+    color: black;
+    background-color: #FFFFE1;
+}
+
+#rescuemessage 
+{
+    position: absolute;
+    width: 450px;
+    background-color: #2048B0;
+    z-index: 2;
+    color: white;
+    display: none;
+    border: 1px solid black;
+}
+
+#rescuemessage TD, #whyfree A 
+{
+    color: #ffffff;
+}
+
+/* - new group bar - */
+table.myctablenew 
+{
+    border-collapse: collapse !important;
+    min-width: 725px;
+    width: 99%;
+    margin-bottom: 10px;
+    clear: left;
+}
+
+table.myctablenew td.nc4
+{
+    width: auto;
+}
+
+table.myctablenew img.dragdropok, table.myctablenew img.detailviewmenu, table.myctablenew div.dragdropok
+{
+    width: 16px !important;
+    height: 16px !important;
+    float: left; display: inline;
+    margin-right: 5px !important;
+    padding: 0;
+}
+
+table.myctablenew div.dragdropok.remote {
+    background: url('../images/sprites_elements2.png') no-repeat -360px -410px;;; margin: 0 5px 1px 5px;
+    -behavior: url('../css/iepngfix.htc');
+}
+
+table.myctablenew a {
+    line-height: normal !important;
+}
+
+table.myctablenew div.rc
+{background: url('../images/sprites_elements2.png') no-repeat -360px -140px;; width: 16px; height: 16px; float: left; margin-right: 8px;}
+table.myctablenew div.rc_inact
+{background: url('../images/sprites_elements2.png') no-repeat -400px -140px;; width: 16px; height: 16px; float: left; margin-right: 8px;}
+table.myctablenew div.home
+{background: url('../images/sprites_elements2.png') no-repeat -360px -40px;; width: 16px; height: 16px; float: left; margin-right: 8px;}
+table.myctablenew div.home_inact
+{background: url('../images/sprites_elements2.png') no-repeat -400px -40px;; width: 16px; height: 16px; float: left; margin-right: 8px;}
+table.myctablenew img.properties
+{background: url('../images/sprites_elements2.png') no-repeat -360px -80px;}
+table.myctablenew div.inventory
+{background: url('../images/sprites_elements2.png') no-repeat -360px -360px;; width: 16px; height: 16px; margin-left: auto; margin-right: auto; }
+
+table.myctablenew div.config
+{
+    background: url('../images/sprites_elements2.png') no-repeat -360px -80px;;; width: 16px; height: 16px;
+    margin-left: auto; margin-right: auto;
+    -behavior: url('../css/iepngfix.htc');
+}
+
+
+table.myctablenew div.note
+{background: url('../images/sprites_elements2.png') no-repeat -400px -60px;; width: 16px; height: 16px; margin-left: auto; margin-right: auto; padding: 0}
+table.myctablenew div.note_inact
+{background: url('../images/sprites_elements2.png') no-repeat -360px -60px;; width: 16px; height: 16px; margin-left: auto; margin-right: auto; padding: 0}
+table.myctablenew div.fileman
+{background: url('../images/sprites_elements2.png') no-repeat -360px -120px;; width: 16px; height: 16px; float: left; margin-right: 8px;}
+table.myctablenew div.fileman_inact
+{background: url('../images/sprites_elements2.png') no-repeat -400px -120px;; width: 16px; height: 16px; float: left; margin-right: 8px;}
+
+
+ul.Computers_HostControls div.main
+{background: url('../images/sprites_elements2.png') no-repeat -360px -40px;}
+ul.Computers_HostControls div.main_inact
+{background: url('../images/sprites_elements2.png') no-repeat -400px -40px;}
+ul.Computers_HostControls div.dashboard
+{background: url('../images/sprites_elements2.png') no-repeat -360px -200px;}
+ul.Computers_HostControls div.dashboard_inact
+{background: url('../images/sprites_elements2.png') no-repeat -400px -200px;}
+ul.Computers_HostControls div.fileman
+{background: url('../images/sprites_elements2.png') no-repeat -360px -120px;}
+ul.Computers_HostControls div.fileman_inact
+{background: url('../images/sprites_elements2.png') no-repeat -400px -120px;}
+ul.Computers_HostControls div.config
+{background: url('../images/sprites_elements2.png') no-repeat -360px -80px;; margin: 0 5px 0 0}
+ul.Computers_HostControls div.note
+{background: url('../images/sprites_elements2.png') no-repeat -400px -60px;; margin: 0 5px 0 0}
+ul.Computers_HostControls div.note.inact
+{background: url('../images/sprites_elements2.png') no-repeat -360px -60px;; margin: 0 5px 0 0}
+ul.Computers_HostControls div.alerts
+{background: url('../images/sprites_elements2.png') no-repeat -360px -100px;;; margin: 0 5px 0 0}
+
+
+.viewselector
+{
+    width: 160px; float: left
+}
+
+.grplinkdiv
+{
+    padding: 5px;
+}
+
+.dragdropok
+{
+    cursor: move;
+}
+
+/*---*/
+.addtexts
+{
+    font-size: 12px;
+}
+
+.addtexts a
+{
+    color: #000000;
+}
+
+.addimages
+{
+    margin-right: 4px;
+}
+
+/* group row styles for the new g3 design */
+.grpsep
+{
+    width: 1px;
+    border-right: 1px solid white;
+    height: 18px;
+    background-color: #C7DCE6;
+    display: block;
+    float: left;
+    margin-top: 4px;
+}
+
+.grptxt
+{
+    text-align: center;
+    vertical-align: middle;
+    margin-top:5px;
+    float: left;
+    height: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #004466;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -moz-binding: url('../css/ellipsis.xml#ellipsis');
+}
+
+.grpname
+{
+    font-weight: bold;
+    max-width: 30%;
+}
+
+.alertno
+{
+    color: #c82f2f;
+}
+
+.grpdiv
+{
+    font-size: 12px;
+    font-family: Arial;
+    background: url('../images/sprites_horizontal2.png') repeat-x 0 -240px;;;
+    height: 26px;
+    float: left;
+    width: 98%;
+    min-width: 496px;
+}        
+
+.grpdivleft
+{
+    width: 4px;
+    height: 26px;
+    background: url('../images/sprites_elements2.png') no-repeat 0 -240px;;;
+    display: block;
+    float: left;            
+}
+
+.grpdivright
+{
+    width: 4px;
+    height: 26px;
+    background: url('../images/sprites_elements2.png') no-repeat -22px -240px;;;
+    display: block;
+    float: left;
+    clear: right;
+}   
+.manage
+{
+    float: right;
+}
+
+.grpcontainer /* contains the group parts */
+{
+    clear: both;
+    display: block;
+    height: 26px;
+    margin-bottom: 10px;
+    min-width: 504px;
+}
+
+.managecontent
+{
+    float: left;
+    margin-top: 5px;
+    padding-right: 6px;
+    /*padding-left: 6px;	*/
+}
+
+/** group icon hover coll/exp **/
+.switchicon_expand
+{
+    width: 15px; height: 15px; margin: 5px 3px 0 3px;
+    cursor: pointer;
+    background: url('../images/sprites_elements2.png') no-repeat -337px -402px;;
+}
+
+div.switchicon_expand:hover
+{	
+    background: url('../images/sprites_elements2.png') no-repeat -337px -422px;;
+}
+
+.switchicon_collapse
+{
+    width: 15px; height: 15px; margin: 5px 3px 0 3px;
+    cursor: pointer;
+    background: url('../images/sprites_elements2.png') no-repeat -337px -442px;;
+}
+
+div.switchicon_collapse:hover
+{	
+    background: url('../images/sprites_elements2.png') no-repeat -337px -462px;;
+}
+/** - **/
+
+div.manageicon     
+{
+    background: url('../images/sprites_elements2.png') no-repeat -338px -361px;;; width: 15px; height: 15px;
+}
+
+div.manageicon:hover
+{
+    background: url('../images/sprites_elements2.png') no-repeat -338px -381px;;
+}
+
+.managelink     
+{
+    text-decoration: none;
+    color: #004466;
+    font-size: 10px;
+}
+
+.grpspace
+{
+    height: 30px;
+    border: solid 1px red;
+}
+
+/*- host tables new g3 -*/
+div.productstatus
+{
+    font-size: 10px;
+    color: #505050;
+    float: left;
+}
+
+.remotectrlsep
+{
+    width: 1px;
+    height: 18px;
+    background: #C0C0C0;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:  4px;   
+}
+
+/** 
+ more options rounded table
+ **/
+
+td.moreTopLeft,    td.moreTopRight,
+td.moreBottomLeft, td.moreBottomRight
+{        
+    height: 5px;
+    width:  5px;
+}
+
+td.moreMidLeft, td.moreMidRight
+{
+    width: 5px;
+}
+
+td.moreTopCenter, td.moreBottomCenter
+{
+    height: 5px;
+}
+
+/*spec*/
+td.moreTopLeft
+{
+    background: url('../images/sprites_elements2.png') no-repeat -160px -460px;;
+}    
+td.moreTopCenter
+{
+    background: url('../images/sprites_horizontal2.png') repeat-x 0 -2270px;;
+}
+td.moreTopRight
+{
+    background: url('../images/sprites_elements2.png') no-repeat -160px -490px;;
+}
+
+
+td.moreBottomLeft
+{
+    background: url('../images/sprites_elements2.png') no-repeat -160px -481px;;
+}    
+td.moreBottomCenter
+{
+    background: url('../images/sprites_horizontal2.png') repeat-x 0 -2291px;;
+}
+td.moreBottomRight
+{
+    background: url('../images/sprites_elements2.png') no-repeat -160px -511px;;
+}
+
+
+td.moreMidLeft
+{
+    background: url('../images/sprites_vertical2.png') repeat-y -160px 0;;
+} 
+td.moreMidCenter
+{
+    background-color: #FAFAFA;
+} 
+td.moreMidRight
+{
+    background: url('../images/sprites_vertical2.png') repeat-y -170px 0;;
+}
+
+div.hostimgtilediv
+{
+    width: 96px; 
+    height: 55px; 
+    float: left;
+}
+
+ul.Computers_HostControls img
+{
+    margin: 0px 5px;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+ul.Computers_HostControls a,
+ul.Computers_HostControls span,
+ul.Computers_HostControls li
+{
+    text-decoration: none;
+    color: #808080;
+    font-size: 11px;
+    line-height: normal !important;
+}
+ul.Computers_HostControls a
+{
+    color: #333333;
+    font-weight: normal !important;
+}
+ul.Computers_HostControls a,
+ul.Computers_HostControls span
+{
+    position: relative; top: 1px;
+}
+ul.Computers_HostControls li
+{
+    float: left; display: inline;
+    margin: 0 8px 0 5px;
+}
+
+div.moreopt_prop
+{
+    width: 16px;
+    height: 16px;
+    /*not found ... brunoli*/
+    background: url('/images/cmp/cnt_home_more_ico_config.gif') no-repeat center;
+    display: inline-block;
+}
+
+div.moreopt_prop:hover
+{
+    background: url('../images/cnt_home_ico_config_over.gif') no-repeat center;
+}
+
+a.moreopt_prop_link
+{
+    margin-left: 5px;
+}
+
+span.moreopt_fm
+{
+    width: 16px;
+    height: 16px;
+    /*not found ... brunoli*/
+    background: url('/images/cmp/cnt_home_more_ico_fileman.gif') no-repeat center;
+}
+
+span.moreopt_fm:hover
+{       /*not found ... brunoli*/
+        background: url('/images/cmp/cnt_home_ico_fileman_over.gif') no-repeat center;
+}
+
+div.alertbubble
+{
+    margin-left: -37px;
+    margin-top: -2px;
+    float: left;
+}
+
+div.alertbubb_left
+{
+    height: 20px;
+    width: 10px;
+    background: url('../images/cnt_home_comp_on_alert_left.gif') no-repeat center;
+    float: left;
+}
+div.alertbubb_mid
+{
+    height: 20px;
+    float: left;
+    background: url('../images/cnt_home_comp_on_alert_mid.gif') repeat-x center;
+    text-align: center;
+    vertical-align: middle;
+}
+div.alertbubb_right
+{
+    height: 20px;
+    width: 10px;
+    float: left;
+    background: url('../images/cnt_home_comp_on_alert_right.gif') repeat-x center;
+}
+
+div.alertbubb_mid a
+{
+    text-decoration: none;
+    color: White;
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+    margin-top: 3px;
+}
+
+div.powerondiv
+{
+    display: none;
+}
+
+div.powerondiv_visible
+{
+    float: left;
+}
+
+.pagecontent a.poweronlink
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #1b6d4b;
+    float: left;
+    display: block;
+    height: 26px; line-height: 26px !important;
+    text-decoration: none;
+
+}
+.pagecontent a.poweronlink div.pwrimg
+{
+    background: url('../images/sprites_elements2.png') no-repeat -30px -270px;;;
+    width: 26px; height: 26px; margin-right: 5px;
+    float: left
+}
+
+.pagecontent a.poweronlink div.pwrimg:hover
+{
+    background: url('../images/sprites_elements2.png') no-repeat -30px -330px;;
+}
+
+div.poweronimg
+{
+    background: url('../images/cnt_home_button_load.gif') no-repeat center;
+    width: 60px;
+    height: 26px;
+    border: 0;
+    float: left;
+    cursor: pointer;
+    display: block;
+}
+
+span.switchontxt
+{
+    vertical-align: middle;
+    padding-top: 7px;
+    padding-left:5px;
+    float: left;
+}
+
+div.poweringondiv
+{
+    background: url('../images/cnt_home_ico_bigloading.gif') no-repeat left;
+    width: auto;
+    height: 26px; line-height: 26px !important;
+    float: left;
+    display: block;
+    padding-left: 32px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1b6d4b;
+}
+
+/*list view*/
+div.listviewcont
+{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+div.stsmlico
+{
+    -behavior: url('../css/iepngfix.htc');
+    width: 23px; height: 13px;
+    float: left; display: inline; margin-right: 3px;
+}
+div.si
+{    background: url('../images/sprites_elements2.png') no-repeat -30px -910px;; }        /* unknown */
+div.si0
+{    background: url('../images/sprites_elements2.png') no-repeat -30px -910px;; }       /* offline */
+div.si1
+{    background: url('../images/sprites_elements2.png') no-repeat 0 -910px;; }         /* online */
+div.si2
+{    background: url('../images/sprites_elements2.png') no-repeat -120px -910px;; }        /* expired */
+div.si3
+{    background: url('../images/sprites_elements2.png') no-repeat -120px -910px;; }         /* banned  */
+div.si4
+{    background: url('../images/sprites_elements2.png') no-repeat -180px -910px;; }          /* in use */
+div.si80
+{    background: url('../images/sprites_elements2.png') no-repeat -210px -910px;; }       /* updating */
+div.si81
+{    background: url('../images/sprites_elements2.png') no-repeat -30px -910px;; }       /* offline */
+div.si99
+{    background: url('../images/sprites_elements2.png') no-repeat -240px -910px;; }        /* deleted  */
+div.si0_a
+{    background: url('../images/sprites_elements2.png') no-repeat -90px -910px;; }   /* offline with alert */
+div.si1_a
+{    background: url('../images/sprites_elements2.png') no-repeat -60px -910px;; }    /* online with alert */
+
+span.listvoff
+{	
+    color: #808080;
+}
+
+.pagecontent a.listvonlnk
+{
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* details */
+.dhcleft
+{
+    text-align: center;
+    width: 1%;
+    border-bottom: 1px solid #E5E5E5;
+} 
+
+.dhcright
+{
+    border-bottom: 1px solid #E5E5E5;
+} 
+
+.dhcmid
+{	
+    border-bottom: 1px solid #E5E5E5;
+} 
+
+
+.hcelldetails
+{
+    padding: 5px 4px 4px 4px;
+    color: black;
+    background-color: #EAF3F7;
+    font-size: 11px;
+    font-family: Arial;
+}
+
+tr.dtr0
+{
+    font-size: 11px
+}
+
+tr.dtr1
+{
+    background-color: #F5F5F5;
+    font-size: 11px
+}
+
+.dcell 
+{
+    padding: 3px 4px;
+}
+
+.pagecontent a.dvnamelnk
+{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+span.dvnameoff
+{
+    color: #606060;
+    overflow: hidden;
+    white-space: nowrap;
+} 
+
+div.detailspoweringondiv
+{
+    background: url('../images/cnt_home_ico_loading.gif') no-repeat left;
+    height: 17px; line-height: 17px !important;
+    padding-left: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #458d6f;
+}
+
+a.poweronlink_dv
+{
+    font-size: 10px;
+    font-weight: bold;
+    color: #1b6d4b;
+    text-decoration: none;
+} 
+
+a.poweronlink_dv span
+{
+    display: block;
+    float: left;
+    line-height: 16px !important;
+}
+
+span.poweronimage
+{
+    height: 16px;
+    width: 20px;
+    background: url('../images/cnt_home_ico_power.gif') no-repeat left;
+    display: block;
+    float:left;
+}
+
+#RecentlyAccessedHeader 
+{
+    padding-bottom: 10px;
+
+    color:#004466;
+    font-family:Arial;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+#RecentlyAccessedHeader, 
+#RecentlyAccessedFooter, 
+#OnlineFooter
+{
+    display: none;
+} 
+
+/*computers toolbar*/
+
+#cmp_classic_toolbar
+{
+    height: 26px;
+    width: 150px;
+}
+
+#cmp_tbar_left
+{
+    background: url('../images/sprites_elements2.png') no-repeat -160px -460px;;; width: 5px;
+}
+#cmp_tbar_mid 
+{
+    background: url('../images/sprites_horizontal2.png') repeat-x 0 -2270px;;
+}
+#cmp_tbar_mid a {
+    display: block; float: left;
+    width: 15px; height: 14px;
+    padding: 3px; margin: 2px;
+}
+#cmp_tbar_mid div.sepa {
+    float: left; 
+    width: 1px; height: 20px; margin: 3px; 
+    background-color: #DADCDE
+}
+
+#cmp_tbar_right
+{
+    background: url('../images/sprites_elements2.png') no-repeat -160px -490px;;; width: 5px;
+}
+
+#cmp_tbar_left,#cmp_tbar_right,#cmp_tbar_mid
+{
+    height: 26px;
+    float: left;
+}
+
+#cmp_classic_refresh
+{	
+    background: url('../images/sprites_elements2.png') no-repeat -227px -717px;;;
+    border: 1px solid #FAFAFA;
+}
+#cmp_classic_refresh:hover
+{	
+    background: url('../images/sprites_elements2.png') no-repeat -227px -737px;;;
+}
+
+#cmp_classic_tile
+{	
+    background: url('../images/sprites_elements2.png') no-repeat -247px -717px;;;
+    border: 1px solid #FAFAFA;
+}
+#cmp_classic_tile:hover
+{	
+    background: url('../images/sprites_elements2.png') no-repeat -247px -737px;;;
+}
+
+#cmp_classic_list
+{
+    background: url('../images/sprites_elements2.png') no-repeat -267px -717px;;;
+    border: 1px solid #FAFAFA;
+}
+#cmp_classic_list:hover
+{
+    background: url('../images/sprites_elements2.png') no-repeat -267px -737px;;;
+}
+
+#cmp_classic_detail
+{
+    background: url('../images/sprites_elements2.png') no-repeat -287px -717px;;;
+    border: 1px solid #FAFAFA;
+}
+#cmp_classic_detail:hover
+{
+    background: url('../images/sprites_elements2.png') no-repeat -287px -737px;;;
+}
+
+a.activetbaritem
+{
+    border: solid 1px #D0D0D0 !important;
+    background-color: #ECECEC !important;
+}
+
+/* Add Computer button on MyC   */
+td.addcomp_left {
+    background: url('../images/sprites_elements2.png') no-repeat 0 0;;; width: 10px;
+}
+td.addcomp_mid {
+    background: url('../images/sprites_horizontal2.png') repeat-x 0 0;;
+    height: 26px;
+}
+td.addcomp_right {
+    background: url('../images/sprites_elements2.png') no-repeat -16px 0;;; width: 10px;
+}
+table.addcomp {
+    border: 0;
+    float: left;
+    margin-right: 12px;
+}
+
+table.addcomp a {color: white !important; text-decoration: none !important; 
+                 line-height: normal !important; font-size: 12px; display: block; padding: 4px 0 5px 0}
+table.addcomp a:hover {color: white !important}
+
+/*rc button tile view*/
+td.rcbtn_left {
+    background: url('../images/sprites_elements2.png') no-repeat 0 -270px;;; width: 4px;
+}
+td.rcbtn_mid {
+    background: url('../images/sprites_horizontal2.png') repeat-x 0 -270px;;; height: 26px;
+}
+td.rcbtn_right {
+    background: url('../images/sprites_elements2.png') no-repeat -22px -270px;;; width: 4px;
+}
+table.rcbtntbl {
+    border: 0;
+    float: left;
+}
+
+a.remctrl_link
+{
+    color: #ffffff !important;
+    padding: 0 10px 0 0;
+    font-size: 12px; font-weight: bold;
+}
+
+table.rcbtntbl img
+{
+    border: 0;
+    margin: 0;
+}
+
+div.LoadingPanel.notes .ntstbl {width: 100%}
+div.LoadingPanel.notes .ntstbl td {width: 5px !important; height: 5px; font-size: 1px; padding: 0}
+div.LoadingPanel.notes .ntstbl .inner {width: auto !important; background-color: #EEF9FF; padding: 8px}
+div.LoadingPanel.notes .ntstbl .nt_tl {background-position: -150px -430px}
+div.LoadingPanel.notes .ntstbl .nt_tm {background-position: 0 -2190px}
+div.LoadingPanel.notes .ntstbl .nt_tr {background-position: -160px -430px}
+div.LoadingPanel.notes .ntstbl .nt_ml {background-position: -60px 0}
+div.LoadingPanel.notes .ntstbl .nt_mr {background-position: -70px 0}
+div.LoadingPanel.notes .ntstbl .nt_bl {background-position: -150px -440px}
+div.LoadingPanel.notes .ntstbl .nt_bm {background-position: 0 -2200px}
+div.LoadingPanel.notes .ntstbl .nt_br {background-position: -160px -440px}
+
+div.LoadingPanel.notes .icn {background-position: -400px -60px; width: 16px; height: 16px; float: left; margin-right: 5px}
+
+div.LoadingPanel.notes
+{
+    width: 260px !important;
+    margin-left:-260px;
+}
+
+div.NotesPanel 
+{
+    padding: 0 !important;
+    width: 260px;
+    border: none !important;
+}
+
+div.NotesPanel div.HostName 
+{
+    font: bold 12px Arial;
+    color: #003440;
+    float: left
+}
+
+div.NoteText 
+{
+    padding: 5px 0px !important;
+}
+div.NoteText div
+{
+    padding:0 !important;
+}
+div.NoteText textarea
+{
+    padding: 3px;
+    width: 222px;
+    height: 70px;
+    font: 12px Arial;
+    color: black;
+}
+
+div.NotesPanel ul.buttons input 
+{
+    background: none !important;
+    color: white !important;
+    padding: 2px 2px 3px 2px;
+    cursor: pointer;
+    height: auto; line-height: normal;
+}
+
+div.NotesPanel li.buttonRight input
+{
+    color: #2f5466 !important;
+}
+
+/*tier 3 navigation*/
+ul.buttons.tier
+{
+    display:inline-block;
+    display:-moz-inline-block;
+    zoom:1;
+    display:inline;
+}
+ul.buttons.tier.right
+{
+    float: right;
+}
+ul.buttons.tier, x:-moz-any-link
+{
+    display:-moz-inline-box;
+}
+ul.buttons.tier li
+{
+    float: left;
+    height: 22px;
+    margin-left: 0px;
+}
+
+ul.buttons.tier li.buttonLeftmost,
+ul.buttons.tier li.buttonLeftmid,
+ul.buttons.tier li.buttonRightmid,
+ul.buttons.tier li.buttonRightmost
+{width: 4px;}
+
+ul.buttons.tier  li.buttonLeftmost
+{background: url('../images/side_box_button_main_left.gif') no-repeat top left;}
+ul.buttons.tier  li.buttonLeft
+{background: url('../images/side_box_button_main_bg.gif') repeat-x top left;}
+
+ul.buttons.tier li.buttonLeftmid
+{
+    margin-right: 5px;
+    background: url('../images/side_box_button_main_right.gif') no-repeat top left;
+}
+
+ul.buttons.tier li.buttonRightmid
+{background: url('../images/side_box_button_sec_left.gif') no-repeat top left;}
+ul.buttons.tier li.buttonRight
+{background: url('../images/side_box_button_sec_bg.gif') repeat-x top left;}
+ul.buttons.tier li.buttonRightmost
+{background: url('../images/side_box_button_sec_right.gif') no-repeat top left;}
+
+ul.buttons.tier a
+{
+    display: block;
+    text-decoration: none;
+    padding: 3px 0;
+    color: #fff;
+    cursor: default;
+}
+ul.buttons.tier a:hover
+{
+    color: #fff !important;
+}
+ul.buttons.tier input, ul.buttons.tier button 
+{
+    background: none !important;
+    border: none !important;
+    color: #fff !important;
+    font: bold 12px Arial !important;
+    height: 18px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    overflow: visible;
+    line-height: 18px;
+    line-height: 20px;
+}
+/*tier layout*/
+html
+{
+    height: 100%;
+}
+div#main.blank
+{
+    height: 100%;
+}
+div#main.blank div.addatd.bottom
+{ 
+    padding: 10px 0px 7px 10px;
+    width:100%;
+    height: 25px;
+
+    position: absolute;
+    bottom: 0;
+}
+div#main.blank div.addatd
+{
+    position: relative;
+    padding: 10px 5px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 0px -10px;
+    background: #e4e5e7;
+    text-align: left;
+    height: 22px;
+}
+div#main.blank div#tier_content 
+{
+    width: 100%;
+    height: auto;
+    min-height: 91%;
+    position: relative;
+    margin-top: 10px;
+}
+/*ie7,8 fix*/
+div#main.blank{margin-top/*\**/: -4px\9; margin-top: 0;}
+
+.compDetailDiv
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 240px;
+    font-size: 12px;
+}
+
+.compTileDiv
+{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* MYCOMPUTERS COLUMN WIDTHS */
+
+table.myctablenew td
+{
+    overflow: hidden;
+}
+
+table.myctablenew td.nc2
+{
+    white-space: nowrap;
+}
+table.myctablenew td.nc6 {
+    text-align: center;
+    height: auto;
+}
+
+td.alert { width: 5%; }
+td.status { width: 5%; }
+td.dhccomputers { width: 35%; } 
+td.directconnect { width: 20%; }
+td.laston { width: 15%; }
+td.subscription { width: 13%; }
+td.notes { width: 6%; text-align: center }
+td.properties { width: 6%; cursor: default; text-align: center }
+td.intelrpat { width: 6%; }
+
+/* LANGUAGE SPECIFIC MYC TABLE SETTINGS */
+
+table.ja td.status
+{
+    min-width: 10%;
+}
+
+table.ja td.notes,
+table.ja td.properties
+{
+    min-width: 8%;
+}
+
+ul.cmenu div.checkmark {
+    width: 7px; height: 7px; vertical-align: middle;
+    margin: 5px 6px 0px 6px;
+    background: url('../images/sprites_elements2.png') no-repeat -361px -651px;;
+}
+
+
+/*   MASTER SPRITES Begin   */
+.s_nrc {background: url('../images/sprites_elements2.png') no-repeat 0 0;;}      /* s_nrc stands for Sprite Central No-Repeat */
+.s_rxc {background: url('../images/sprites_horizontal2.png') repeat-x 0 0;;}    /* s_rxc stands for Sprite Central Repeat-X */
+.s_ryc {background: url('../images/sprites_vertical2.png') repeat-y 0 0;;}      /* s_ryc stands for Sprite Central Repeat-Y */
+/*   MASTER SPRITES End   */
+#FavoriteContextMenu_Panel,
+#NavigationContextMenu_Panel,
+#HeaderContextMenu_Panel
+{
+    border: solid 1px #B6B6B9;
+    display: none;
+    position: absolute;
+    background: #F0F0F0;
+    z-index: 999;
+} 
+
+#NavigationContextMenu_Panel,
+#HeaderContextMenu_Panel
+{
+    width: 300px;
+}
+
+ul.cmenu
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background: #F0F0F0;
+}
+
+ul.cmenu li.item
+{
+    height: 20px;
+}
+
+ul.cmenu li.item ul li
+{
+    float: left;
+    height: 20px;
+    font-size: 11px;
+}
+
+
+
+ul.cmenu li.item:hover
+{	
+    background: #a8d1e6 none repeat scroll 0 0;
+}
+
+
+ul.cmenu li.check
+{
+    border-right: solid 1px #E9E9E9;
+}
+
+ul.cmenu li.text
+{
+    border-left: solid 1px #FCFCFC;
+}
+
+ul.cmenu img,
+ul.cmenu span
+{
+    display: block;
+    vertical-align: middle;
+}
+
+ul.cmenu img
+{
+    margin: 5px 6px 0px 6px;
+}
+
+ul.cmenu span
+{
+    margin: 3px 6px 0px 6px;
+}
+
+ul.cmenu li a
+{
+    max-height: 10px;
+    margin: 5px 8px 5px 8px;
+}
+
+ul.cmenu li:hover {}
+ul.cmenu a:hover {text-decoration: underline;}
+ul.cmenu .topSep {font-size: 90%; border-top: 1px solid gray; margin-top: 0.3em; padding-top: 0.3em;}
+.LoadingImageSmall 
+{
+    vertical-align: middle;
+}  
+
+div.LoadingPanel 
+{
+    position:absolute; 
+    width: 200px; 
+    left: 50%; 
+    top: 10px; 
+    margin-left:-100px;
+    font: Verdana; 
+    font-weight: bold;  
+    font-size: 14pt;
+    line-height: 26px;
+    z-index:20000;
+}
+
+div.LoadingPanel div.PanelTop 
+{
+    height: 5px;
+    background: url('../images/loadingtopleft_5x5.gif') top left no-repeat;
+    padding-left: 5px;
+}
+div.LoadingPanel div.PanelTop div 
+{
+    height: 5px;
+    background: url('../images/loadingtopright_5x5.gif') top right no-repeat;
+    padding-right: 5px;
+}
+div.LoadingPanel div.PanelTop div div 
+{
+    height: 5px;
+    overflow: hidden;
+    background: url('../images/loadingtop_100x5.gif') top right repeat-x;
+}
+
+div.LoadingPanel div.Middle div.Left 
+{
+    background: url('../images/loadingleft_5x20.gif') top left repeat-y;
+    padding-left: 5px;
+}
+div.LoadingPanel div.Middle div.Right 
+{
+    background: #eef9ff url('../images/loadingright_5x20.gif') top right repeat-y;
+    padding-right: 5px;
+}
+
+div.LoadingPanel div.PanelBottom 
+{
+    height: 5px;
+    background: url('../images/loadingbottomleft_5x5.gif') top left no-repeat;
+    padding-left: 5px;
+}
+div.LoadingPanel div.PanelBottom div 
+{
+    height: 5px;
+    background: url('../images/loadingbottomright_5x5.gif') top right no-repeat;
+    padding-right: 5px;
+}
+div.LoadingPanel div.PanelBottom div div 
+{
+    height: 5px;
+    overflow: hidden;
+    background: url('../images/loadingbottom_100x5.gif') top right repeat-x;
+}
+
+div.LoadingPanel div.Middle div.Right div
+{
+    padding: 10px;
+}
+
+div.LoadingPanel div.Middle div.Right div img
+{
+    float: left;
+}
+
+div.LoadingPanel  .LoadingImage
+{
+    vertical-align: middle;
+}  
+
+/* on computers.asp we must hide please wait panel because that is not within Updateprogress so we must hide explicit */
+div#WaitPanel 
+{
+    display: none;    
+}
+
+div#LoadingPanel 
+{
+    display: none;    
+}
+
+div.LoadingPanel.auto
+{
+    width: auto;
+    height: auto;
+}

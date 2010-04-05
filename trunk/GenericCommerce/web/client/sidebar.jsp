@@ -3,12 +3,12 @@
     <li>
         <span class="button mycomp active">
             <span class="left"></span>
-            <span class="middle"><a href="/computers.asp">Adm de clientes</a></span>
+            <span class="middle"><a href="index.jsp">Adm de clientes</a></span>
             <span class="right"></span><div class=clears></div>
         </span>
-        <span class="sub"><a href="/computers.asp">Nuevo cliente</a></span>
-        <span class="sub"><a href="/userlist.asp">Modificar cliente</a></span>
-        <span class="sub"><a href="/reports_wrapper.asp">Borrar cliente</a></span>
+        <span class="sub"><a href="nuevo.jsp">Nuevo cliente</a></span>
+        <span class="sub"><a href="modificar.jsp">Modificar cliente</a></span>
+        <span class="sub"><a href="borrar.jsp">Borrar cliente</a></span>
     </li>
     <li>
         <span class="button mycomp">

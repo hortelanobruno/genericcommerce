@@ -1,17 +1,11 @@
 <?php
 
-//Configuration AutoUploader
-$lib = '/Doctrine/doctrine2-orm/lib/';
-require $lib . 'vendor/doctrine2-common/lib/Doctrine/Common/ClassLoader.php';
+// Configuration AutoUploader
 
-$classLoader = new \Doctrine\Common\ClassLoader('Doctrine\Common', $lib . 'vendor/doctrine2-common/lib');
-$classLoader->register();
 
-$classLoader = new \Doctrine\Common\ClassLoader('Doctrine\DBAL', $lib . 'vendor/doctrine2-dbal/lib');
-$classLoader->register();
-
-$classLoader = new \Doctrine\Common\ClassLoader('Doctrine\ORM', $lib);
-$classLoader->register();
+require 'C:\xampp\php\PEAR\Doctrine\Common\ClassLoader.php';
+$classLoader = new \Doctrine\Common\ClassLoader('Doctrine', 'C:\xampp\php\PEAR');
+$classLoader->register(); // register on SPL autoload stack
 
 $classLoader = new \Doctrine\Common\ClassLoader('Entity', '.');
 $classLoader->register();
@@ -48,7 +42,7 @@ if ($applicationMode == "development") {
 $connectionOptions = array(
     'dbname' => 'test',
     'user' => 'root',
-    'password' => '',
+    'password' => 'root',
     'host' => 'localhost',
     'driver' => 'pdo_mysql',
 );

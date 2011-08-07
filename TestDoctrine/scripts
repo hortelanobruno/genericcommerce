@@ -1,0 +1,18 @@
+--CYGWIN
+
+- Run cygwin as adminitrator
+
+--SCHEMA SCRIPTS
+
+- Create tables
+
+doctrine.bat orm:schema-tool:create (run on proyect folder, the cli-config.php is necesary)
+
+- Drop tables
+
+doctrine.bat orm:schema-tool:drop --force
+
+- Update tables
+
+doctrine.bat orm:schema-tool:update --force
+
